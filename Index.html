@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-style: oblique;
+        font-size: larger;
+        font-variant: small-caps;
+    }
+</style>
+
+<body>
+    <p>
+        1) Se trata de poner siete case, uno para cada día
+        de la semana.
+        <br>Finalmente, un bloque default
+        para contemplar cualquier cosa no contemplada
+        en los case.
+        <br>Modificarlo para que informe un plan de
+        ejercicios por día.<br><br>
+    </p>
+
+    <script type="text/JavaScript">
+        let diaSemana = prompt("¿Qué día es hoy?");
+        switch (diaSemana) {
+            case "lunes":
+                document.write("<h1>Ejercicios para el dia LUNES:</h1>")
+                document.write("<ul><li>Trotar 30 minutos.</li>")
+                document.write("<li>3 series de 15 abdominales.</li>")
+                document.write("<li>2 series de flexiones de brazo.</li></ul>")    
+                break;
+            case "martes":
+            document.write("<h1>Ejercicios para el dia MARTES:</h1>")
+                document.write("<ul><li>Caminar 40 minutos.</li>")
+                document.write("<li>3 series de 15 sentadillas.</li>")
+                document.write("<li>4 series de Abdominales.</li></ul>")    
+                break;
+            case "miercoles":
+            document.write("<h1>Ejercicios para el dia MIERCOLES:</h1>")
+                document.write("<ul><li>Trotar 20 minutos.</li>")
+                document.write("<li>2 series de 20 Dorsales.</li>")
+                document.write("<li>25 minutos de bicicleta fija.</li></ul>")    
+                break;
+            case "jueves":
+            document.write("<h1>Ejercicios para el dia JUEVES:</h1>")
+                document.write("<ul><li>Correr 10 minutos.</li>")
+                document.write("<li>5 series de 10 salto en alto.</li>")
+                document.write("<li>2 series de flexiones de brazo.</li></ul>")    
+                break;
+            case "viernes":
+            document.write("<h1>Ejercicios para el dia VIERNES:</h1>")
+                document.write("<ul><li>Caminar 50 minutos.</li>")
+                document.write("<li>6 series de 5 Dominadas.</li>")
+                document.write("<li>4 series de 10 levantamiento de pesas.</li></ul>")    
+                break;
+            case "sabado":
+            document.write("<h1>Ejercicios para el dia SABADO:</h1>")
+                document.write("<ul><li>Trotar 20 minutos.</li>")
+                document.write("<li>2 series de 30 abdominales.</li>")
+                document.write("<li>4 series de 15 repeticiones con mancuerna.</li></ul>")    
+                break;
+            case "domingo":
+            document.write("<h1>Ejercicios para el dia DOMINDO:</h1>")
+                document.write("<ul><li>caminar 30 minutos.</li>")
+                document.write("<li>3 series de 10 abdominales.</li>")
+                document.write("<li>30 minutos de escalador.</li></ul>")    
+                break;
+            default:
+                alert("Escribe el día de la semana en minúsculas.");
+        }
+    </script>
+    <p>
+        ///////////////////////////////////////////////////////////////////<br>
+        ///////////////////////////////////////////////////////////////////<br><br>
+        2) Modifica el bucle para que se ejecute de 20 a 70.<br><br>
+        for(i=0;i<=4;i++){<br>
+            document.write("El número es: " + i + "< br>");<br>
+                }<br>
+    </p>
+    <script type="text/JavaScript">
+        for(i=20;i<=70;i++)
+            {
+                document.write("El número es: " + i + "<br>");
+            }
+    </script>
+
+    <p>
+        ///////////////////////////////////////////////////////////////////<br>
+        ///////////////////////////////////////////////////////////////////<br><br>
+        3) Realizar un bucle, donde el usuario pueda determinar la cantidad de veces que aparecerá
+        el saludo ‘Hola Mundo’.<br><br>
+        
+
+    </p>
+    <script type="text/JavaScript">
+        let cantidadSaludos = prompt("Ingrese la cantidad de Saludos:");
+        for(i=1;i<=cantidadSaludos;i++)
+            {
+                document.write(i + "- Hola Mundo<br>");
+            }
+    </script>
+
+</body>
+
+</html>
